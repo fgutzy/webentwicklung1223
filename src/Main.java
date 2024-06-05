@@ -7,8 +7,10 @@ public class Main {
                 showInputDialog("Bitte geben Sie Ihre E-Mail-Adresse ein:"),
                 showInputDialog("Bitte geben Sie Ihr Passwort ein:"));
 
-        System.out.println("Benutzername: " + testUser.nutzername
-                + "\nE-Mail: " +testUser.email + "\nPasswort: "
-                + testUser.password + "\nAlter: " + testUser.alter);
+        if (testUser.nutzername.equals("Max") && testUser.password.equals("abc")){
+            System.out.println("Anmeldung erfolgreich!");
+        } else {
+            System.out.println("Anmeldung fehlgeschlagen!");
+        }
     }
 }
